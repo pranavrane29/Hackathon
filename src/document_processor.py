@@ -9,9 +9,8 @@ from pptx import Presentation
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 
 
-# ---------------------------------------------------------
 # TEXT SPLITTER
-# ---------------------------------------------------------
+
 
 text_splitter = RecursiveCharacterTextSplitter(
     chunk_size=1000,
@@ -19,9 +18,8 @@ text_splitter = RecursiveCharacterTextSplitter(
 )
 
 
-# ---------------------------------------------------------
 # HELPER: GET FILE NAME AND BYTES
-# ---------------------------------------------------------
+
 
 def get_file_data(file):
     """
@@ -57,9 +55,7 @@ def get_file_data(file):
     return file_name, file_bytes
 
 
-# ---------------------------------------------------------
 # PDF PROCESSING
-# ---------------------------------------------------------
 
 def process_pdf(file_name, file_bytes):
     """
@@ -109,9 +105,7 @@ def process_pdf(file_name, file_bytes):
     return chunks
 
 
-# ---------------------------------------------------------
 # DOCX PROCESSING
-# ---------------------------------------------------------
 
 def process_docx(file_name, file_bytes):
     """
@@ -164,9 +158,8 @@ def process_docx(file_name, file_bytes):
     return chunks
 
 
-# ---------------------------------------------------------
 # TXT PROCESSING
-# ---------------------------------------------------------
+
 
 def process_txt(file_name, file_bytes):
     """
@@ -213,10 +206,7 @@ def process_txt(file_name, file_bytes):
 
     return chunks
 
-
-# ---------------------------------------------------------
 # CSV PROCESSING
-# ---------------------------------------------------------
 
 def process_csv(file_name, file_bytes):
     """
@@ -271,9 +261,8 @@ def process_csv(file_name, file_bytes):
     return chunks
 
 
-# ---------------------------------------------------------
 # PPTX PROCESSING
-# ---------------------------------------------------------
+
 
 def process_pptx(file_name, file_bytes):
     """
@@ -336,9 +325,8 @@ def process_pptx(file_name, file_bytes):
     return chunks
 
 
-# ---------------------------------------------------------
 # PROCESS ONE DOCUMENT
-# ---------------------------------------------------------
+
 
 def process_single_document(file):
     """
@@ -395,9 +383,8 @@ def process_single_document(file):
         )
 
 
-# ---------------------------------------------------------
 # PROCESS MULTIPLE DOCUMENTS
-# ---------------------------------------------------------
+
 
 def process_documents(files):
     """

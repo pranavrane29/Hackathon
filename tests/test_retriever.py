@@ -11,9 +11,9 @@ def main():
     print("EMBEDDING + RETRIEVAL TEST")
     print("=" * 60)
 
-    # -----------------------------------------------------
+   
     # STEP 1: Get document paths
-    # -----------------------------------------------------
+
 
     paths = input(
         "\nEnter document paths separated by commas:\n"
@@ -31,9 +31,9 @@ def main():
 
     try:
 
-        # -------------------------------------------------
+ 
         # STEP 2: Process multiple documents
-        # -------------------------------------------------
+  
 
         print("\nProcessing documents...")
 

@@ -12,9 +12,9 @@ def main():
     print("RAG SYSTEM TEST")
     print("=" * 60)
 
-    # -----------------------------------------------------
+  
     # STEP 1: Get documents
-    # -----------------------------------------------------
+
 
     paths = input(
         "\nEnter document paths separated by commas:\n"
@@ -32,9 +32,9 @@ def main():
 
     try:
 
-        # -------------------------------------------------
+      
         # STEP 2: Process documents
-        # -------------------------------------------------
+      
 
         print("\nProcessing documents...")
 
@@ -44,9 +44,8 @@ def main():
             f"Created {len(chunks)} chunks."
         )
 
-        # -------------------------------------------------
         # STEP 3: Create vector store
-        # -------------------------------------------------
+        
 
         print(
             "\nCreating vector store..."
@@ -60,17 +59,15 @@ def main():
             "Vector store created successfully."
         )
 
-        # -------------------------------------------------
         # STEP 4: Ask question
-        # -------------------------------------------------
+      
 
         query = input(
             "\nEnter your question:\n"
         )
 
-        # -------------------------------------------------
         # STEP 5: Retrieve relevant chunks
-        # -------------------------------------------------
+     
 
         print(
             "\nRetrieving relevant information..."
@@ -87,9 +84,9 @@ def main():
             f"Retrieved {len(results)} relevant chunks."
         )
 
-        # -------------------------------------------------
+        
         # STEP 6: Generate answer
-        # -------------------------------------------------
+      
 
         print(
             "\nGenerating answer..."
@@ -100,9 +97,8 @@ def main():
             results
         )
 
-        # -------------------------------------------------
         # STEP 7: Display answer
-        # -------------------------------------------------
+   
 
         print("\n" + "=" * 60)
         print("ANSWER")

@@ -15,11 +15,7 @@ from src.retriever import (
 )
 from src.rag import answer_question
 
-
-
-# =========================================================
 # PAGE CONFIG
-# =========================================================
 
 st.set_page_config(
     page_title="ResearchIQ",
@@ -29,9 +25,7 @@ st.set_page_config(
 )
 
 
-# =========================================================
 # CUSTOM CSS
-# =========================================================
 
 st.markdown("""
 <style>
@@ -168,10 +162,8 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-
-# =========================================================
 # SESSION STATE
-# =========================================================
+
 
 if "processed" not in st.session_state:
     st.session_state.processed = False
@@ -192,9 +184,7 @@ if "results" not in st.session_state:
     st.session_state.results = []
 
 
-# =========================================================
 # SIDEBAR
-# =========================================================
 
 with st.sidebar:
 
@@ -279,9 +269,7 @@ with st.sidebar:
         st.rerun()
 
 
-# =========================================================
 # HEADER
-# =========================================================
 
 header_col1, header_col2 = st.columns(
     [5, 1]
@@ -312,9 +300,8 @@ with header_col2:
     )
 
 
-# =========================================================
 # UPLOAD SECTION
-# =========================================================
+
 
 st.markdown(
     '<div class="section-label">01 · DOCUMENTS</div>',
@@ -411,9 +398,8 @@ st.markdown(
 )
 
 
-# =========================================================
 # PROCESSING STATS
-# =========================================================
+
 
 if st.session_state.processed:
 
@@ -468,9 +454,7 @@ if st.session_state.processed:
         )
 
 
-# =========================================================
 # QUESTION SECTION
-# =========================================================
 
 if st.session_state.processed:
 
@@ -563,10 +547,7 @@ if st.session_state.processed:
                         f"Analysis failed: {error}"
                     )
 
-
-# =========================================================
 # ANSWER
-# =========================================================
 
 if st.session_state.answer:
 
@@ -591,9 +572,8 @@ if st.session_state.answer:
     )
 
 
-# =========================================================
 # SOURCES
-# =========================================================
+
 
 if st.session_state.results:
 

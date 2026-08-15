@@ -3,9 +3,8 @@ import faiss
 import numpy as np
 
 
-# ---------------------------------------------------------
 # EMBEDDING MODEL
-# ---------------------------------------------------------
+
 
 EMBEDDING_MODEL_NAME = "all-MiniLM-L6-v2"
 
@@ -14,9 +13,8 @@ embedding_model = SentenceTransformer(
 )
 
 
-# ---------------------------------------------------------
 # CREATE VECTOR STORE
-# ---------------------------------------------------------
+
 
 def create_vector_store(chunks):
     """
@@ -63,10 +61,8 @@ def create_vector_store(chunks):
 
     return index, chunks
 
-
-# ---------------------------------------------------------
 # RETRIEVE RELEVANT CHUNKS
-# ---------------------------------------------------------
+
 
 def retrieve_documents(index, chunks, query, k=5):
     """

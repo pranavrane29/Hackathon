@@ -29,9 +29,8 @@ llm = ChatGroq(
 )
 
 
-# ---------------------------------------------------------
 # BUILD CONTEXT
-# ---------------------------------------------------------
+
 
 def build_context(chunks):
     """
@@ -84,9 +83,8 @@ def build_context(chunks):
     return "\n\n".join(context_parts)
 
 
-# ---------------------------------------------------------
 # GENERATE ANSWER
-# ---------------------------------------------------------
+
 
 def answer_question(query, chunks):
     """
