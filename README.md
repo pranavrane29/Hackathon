@@ -9,6 +9,15 @@ Instead of treating every uploaded document as an isolated file, ResearchIQ buil
 The result is a complete pipeline connecting **document processing → text chunking → embeddings → vector retrieval → RAG-based answer generation → source-aware presentation** in one application.
 
 ---
+## 🌐 Live Demo & Repository
+
+Experience ResearchIQ through the deployed frontend:
+
+🔗 **Live Frontend:** https://hackathon-front-1.onrender.com/
+
+💻 **Frontend Repository:** https://github.com/pranavrane29/Hackathon-Front
+
+---
 
 ## ✨ Why ResearchIQ?
 
