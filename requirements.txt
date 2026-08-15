@@ -1,8 +1,9 @@
-langchain
-langchain-groq
-langchain-mistralai
-python-dotenv
-streamlit
 pypdf
+python-docx
+pandas
+python-pptx
+langchain-text-splitters
 sentence-transformers
 faiss-cpu
+langchain-groq
+python-dotenv
